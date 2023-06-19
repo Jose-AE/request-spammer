@@ -1,5 +1,11 @@
+# import required modules
 from selenium import webdriver
 
 
-driver = webdriver.Edge()
-driver.get("google.com")
+# Driver Code
+if __name__ == "__main__":
+    # create object
+    browser = webdriver.Edge("msedgedriver.exe")
+
+    # open browser and navigate to facebook
+    browser.get("https://www.facebook.com")
